@@ -1,0 +1,23 @@
+weight_of_package=float(input('Enter weight of package:'))
+if weight_of_package>10:
+	shipping_charge=4.75
+	total_cost=weight_of_package*4.75
+	print('Shipping charge:', format(shipping_charge,'.2f'))
+	print('Total cost:', format(total_cost, '.2f'))
+elif weight_of_package>6 and weight_of_package<=10:
+	shipping_charge=4.00
+	total_cost=weight_of_package*4.00
+	print('Shipping charge:', format(shipping_charge,'.2f'))
+	print('Total cost:', format(total_cost, '.2f'))
+elif weight_of_package>2 and weight_of_package<=6:
+	shipping_charge=3.00
+	total_cost=weight_of_package*3.00
+	print('Shipping charge:', format(shipping_charge,'.2f'))
+	print('Total cost:', format(total_cost, '.2f'))
+elif weight_of_package<=2:
+	shipping_charge=1.50
+	total_cost=weight_of_package*1.50
+	print('Shipping charge:', format(shipping_charge,'.2f'))
+	print('Total cost:', format(total_cost, '.2f'))
+else:
+	print('Cannot be determined')
